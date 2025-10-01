@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estructura.css">
+</head>
+<body>
+    <div class="padre" class="container-fluid">
+        <div class="menu" class= "container-fluid">
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+                        </li>
+                        
+
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Halloween
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pags/historiaH.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./pags/costumbresH.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="./pags/gastronomiaH.html">Gatronomia</a></li>
+                            <li><a class="dropdown-item" href="./pags/simbolosH.html">Simbolos y su significado</a></li>
+                        </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Todos Santos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pags/todos1.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./pags/costumbrest.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="./pags/gastronomiaT.html">Gatronomia</a></li>
+                            <li><a class="dropdown-item" href="./pags/simbolosT.html">Simbolos y su significado</a></li>
+                        </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="./pags/contactos.html">Contactos</a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                </div>
+                </nav>
+
+        </div>
+        <div class="contenido" class="container-fluid">
+            <h1> BIENVENIDOS A LA PAGINA PRINCIPAL</h1>
+            
+            <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./imag/mexico.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Halloween en México</h5>
+                    <p>Halloween en México es un fenómeno que ha evolucionado a lo largo del tiempo, influenciado por tradiciones celtas y la cultura popular estadounidense.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./imag/bolivia.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Todos Santos en Bolivia</h5>
+                    <p>El día de todos los santos que se celebra en noviembre, es la fiesta de los difuntos. Las familias conmemoramos y recordamos a los que ya no están con nosotros.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="./imag/USA.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h5>Halloween en EEUU</h5>
+                    <p>Cada 31 de octubre, las personas a lo largo de EE. UU. se disfrazan de cosas espeluznantes, hacen fiestas y van de puerta en puerta pidiendo dulces para celebrar Halloween.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+        </div>
+        <div class="ads" class="container-fluid">
+            <h1>Con el apoyo de:</h1>
+            <a href="https://www.monsterenergy.com/es-es" target="_blank">
+            <img src="./imag/monster.webp" alt="Monster" width="300" class="img-link">
+            </a>
+
+            <a href="https://pilandina.com.bo" target="_blank">
+            <img src="./imag/delizia.png" alt="PIL" width="200" class="img-link">
+            </a>
+        </div>
+
+        <div class="pie" class="container-fluid"">  
+            <h4>Realizado por Grace Luna Verdueta, 2025</h4>
+        </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

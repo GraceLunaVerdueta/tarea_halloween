@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estructura.css">
+</head>
+<body>
+    <div class="padre" class="container-fluid">
+        <div class="menu" class="container-fluid">
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
+                        </li>
+                        
+
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Halloween
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./historiaH.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./costumbresH.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="#">Gatronomia</a></li>
+                            <li><a class="dropdown-item" href="./simbolosH.html">Simbolos y su significado</a></li>
+                        </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Todos Santos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./todos1.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./costumbrest.html">Costumbres</a></li>
+                            <li><a class="dropdown-item" href="./gastronomiaT.html">Gatronomia</a></li>
+                            <li><a class="dropdown-item" href="./simbolosT.html">Simbolos y su significado</a></li>
+                        </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                </div>
+                </nav>
+
+        </div>
+        <div class="contenido container-fluid">
+            <h1>GASTRONOMIA HALLOWEEN</h1>
+
+            <!-- Plato 1 -->
+            <div class="btn-group m-2">
+                <button type="button" class="btn btn-success">Pastel de Calabaza</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="mostrar('pastel','imagen')">Imagen</a></li>
+                <li><a class="dropdown-item" href="#" onclick="mostrar('pastel','receta')">Receta</a></li>
+                </ul>
+            </div>
+
+            <!-- Plato 2 -->
+            <div class="btn-group m-2">
+                <button type="button" class="btn btn-info">Manzanas Caramelizadas</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="mostrar('manzana','imagen')">Imagen</a></li>
+                <li><a class="dropdown-item" href="#" onclick="mostrar('manzana','receta')">Receta</a></li>
+                </ul>
+            </div>
+
+            <!-- Plato 3 -->
+            <div class="btn-group m-2">
+                <button type="button" class="btn btn-warning">Galletas Fantasma</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="mostrar('galleta','imagen')">Imagen</a></li>
+                <li><a class="dropdown-item" href="#" onclick="mostrar('galleta','receta')">Receta</a></li>
+                </ul>
+            </div>
+
+            <!-- Contenedor dinámico -->
+            <div id="resultado" class="mt-4 text-center" style="background: transparent; font-weight: bold;">
+                Seleccione una opción
+            </div>
+        </div>
+
+            <script>
+            function mostrar(plato, tipo) {
+                const resultado = document.getElementById("resultado");
+                let contenido = "";
+
+                if (plato === "pastel" && tipo === "imagen") {
+                contenido = "<img src='../imag/calabaza.jpeg' width='500'>";
+                } else if (plato === "pastel" && tipo === "receta") {
+                contenido = "<p><b>Pastel de Calabaza Completo:</b><br><br>" +
+                "<b>Ingredientes:</b><br>" +
+                "- 1 masa para pie (9 pulgadas)<br>" +
+                "- 2 tazas de puré de calabaza fresco o enlatado<br>" +
+                "- 3 huevos grandes<br>" +
+                "- 1 lata (400ml) de leche condensada<br>" +
+                "- 3/4 taza de azúcar moreno<br>" +
+                "- 1 cucharadita de canela molida<br>" +
+                "- 1/2 cucharadita de jengibre molido<br>" +
+                "- 1/4 cucharadita de nuez moscada<br>" +
+                "- 1/4 cucharadita de clavo molido<br>" +
+                "- 1/2 cucharadita de sal<br>" +
+                "- 2 cucharadas de mantequilla derretida<br><br>" +
+                
+                "<b>Preparación:</b><br>" +
+                "1. Precalentar el horno a 180°C (350°F)<br>" +
+                "2. Extender la masa en el molde para pie y refrigerar<br>" +
+                "3. En un bol grande, batir el puré de calabaza con los huevos<br>" +
+                "4. Añadir la leche condensada, azúcar y especias, mezclar bien<br>" +
+                "5. Incorporar la mantequilla derretida y batir hasta homogeneizar<br>" +
+                "6. Verter la mezcla en la masa refrigerada<br>" +
+                "7. Hornear 45-55 minutos hasta que al insertar un cuchillo salga limpio<br>" +
+                "8. Dejar enfriar completamente antes de servir</p>";
+                }
+
+                if (plato === "manzana" && tipo === "imagen") {
+                contenido = "<img src='../imag/manzana.webp' width='500'>";
+                } else if (plato === "manzana" && tipo === "receta") {
+                contenido = "<p><b>Manzanas Caramelizadas Completas:</b><br><br>" +
+                "<b>Ingredientes:</b><br>" +
+                "- 6-8 manzanas firmes (Granny Smith o Fuji)<br>" +
+                "- 2 tazas de azúcar blanca<br>" +
+                "- 1/2 taza de jarabe de maíz claro<br>" +
+                "- 3/4 taza de agua<br>" +
+                "- 1 cucharadita de vinagre blanco<br>" +
+                "- 1/2 cucharadita de colorante rojo (opcional)<br>" +
+                "- 1 cucharadita de extracto de vainilla<br>" +
+                "- Palitos de madera para brocheta<br>" +
+                "- Papel encerado para enfriar<br><br>" +
+                
+                "<b>Preparación:</b><br>" +
+                "1. Lavar y secar bien las manzanas, quitar los tallos<br>" +
+                "2. Insertar un palito de madera en el centro de cada manzana<br>" +
+                "3. En una cacerola pesada, mezclar azúcar, jarabe de maíz, agua y vinagre<br>" +
+                "4. Cocinar a fuego medio sin revolver hasta que llegue a 150°C (300°F)<br>" +
+                "5. Retirar del fuego y añadir vainilla y colorante si se usa<br>" +
+                "6. Sumergir rápidamente cada manzana en el caramelo, girando para cubrir<br>" +
+                "7. Dejar escurrir el exceso y colocar sobre papel encerado<br>" +
+                "8. Dejar enfriar completamente antes de servir (30-45 minutos)</p>";
+                }
+
+                if (plato === "galleta" && tipo === "imagen") {
+                contenido = "<img src='../imag/fantasma.jpg' width='500'>";
+                } else if (plato === "galleta" && tipo === "receta") {
+                contenido = "<p><b>Galletas Fantasma Completas:</b><br><br>" +
+                "<b>Ingredientes para las galletas:</b><br>" +
+                "- 2 1/2 tazas de harina de trigo<br>" +
+                "- 1 cucharadita de polvo de hornear<br>" +
+                "- 1/2 cucharadita de sal<br>" +
+                "- 1 taza de mantequilla sin sal a temperatura ambiente<br>" +
+                "- 3/4 taza de azúcar glass<br>" +
+                "- 1 huevo grande<br>" +
+                "- 1 cucharadita de extracto de vainilla<br><br>" +
+                
+                "<b>Para el glaseado:</b><br>" +
+                "- 2 tazas de azúcar glass<br>" +
+                "- 2-3 cucharadas de leche o agua<br>" +
+                "- 1/2 cucharadita de extracto de vainilla<br>" +
+                "- Chocolate negro para decorar los ojos<br><br>" +
+                
+                "<b>Preparación:</b><br>" +
+                "1. Mezclar harina, polvo de hornear y sal en un bol<br>" +
+                "2. En otro bol, batir mantequilla con azúcar hasta cremoso<br>" +
+                "3. Añadir huevo y vainilla, batir hasta incorporar<br>" +
+                "4. Incorporar los ingredientes secos gradualmente hasta formar masa<br>" +
+                "5. Envolver en plástico y refrigerar 1 hora<br>" +
+                "6. Precalentar horno a 180°C (350°F)<br>" +
+                "7. Estirar la masa y cortar con molde de fantasma<br>" +
+                "8. Hornear 10-12 minutos hasta bordes dorados<br>" +
+                "9. Dejar enfriar completamente<br>" +
+                "10. Preparar glaseado mezclando todos los ingredientes<br>" +
+                "11. Cubrir las galletas con glaseado blanco<br>" +
+                "12. Con chocolate derretido, pintar ojos y boca fantasmales</p>";
+                }
+
+                resultado.innerHTML = contenido;
+            }
+            </script>
+
+        <div class="ads" class="container-fluid">
+            <h1>Con el apoyo de:</h1>
+            <a href="https://www.monsterenergy.com/es-es" target="_blank">
+            <img src="../imag/monster.webp" alt="Monster" width="300" class="img-link">
+            </a>
+
+            <a href="https://pilandina.com.bo" target="_blank">
+            <img src="../imag/delizia.png" alt="PIL" width="200" class="img-link">
+            </a>
+        </div>
+
+        <div class="pie" class="container-fluid"">  
+            <h4>Realizado por Grace Luna Verdueta, 2025</h4>
+        </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
